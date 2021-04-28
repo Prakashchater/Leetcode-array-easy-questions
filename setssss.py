@@ -21,4 +21,13 @@
 # print(l)
 
 
+def migratoryBirds(arr):
+    # Write your code here
+    l = [0] * len(arr)
 
+    for i in range(len(arr)):
+        l[arr[i]] += 1
+    return l.index(max(l))
+
+arr = [1, 2, 3, 4, 5, 4, 3, 2, 1, 3, 4]
+print(migratoryBirds(arr))
