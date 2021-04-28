@@ -47,6 +47,5 @@ def grading(grades):
         res.append(grade)
     return res
 
-
 grades = [73, 67, 38, 33]
 print(grading(grades))
