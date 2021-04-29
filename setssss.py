@@ -21,13 +21,34 @@
 # print(l)
 
 
-def migratoryBirds(arr):
-    # Write your code here
-    l = [0] * len(arr)
+# def migratoryBirds(arr):
+#     # Write your code here
+#     l = [0] * len(arr)
+#
+#     for i in range(len(arr)):
+#         l[arr[i]] += 1
+#     return l.index(max(l))
+#
+# arr = [1, 2, 3, 4, 5, 4, 3, 2, 1, 3, 4]
+# print(migratoryBirds(arr))
 
-    for i in range(len(arr)):
-        l[arr[i]] += 1
-    return l.index(max(l))
 
-arr = [1, 2, 3, 4, 5, 4, 3, 2, 1, 3, 4]
-print(migratoryBirds(arr))
+# n = int(input())
+k = int(input())
+bill = list(map(int, input().split()))
+b = int(input())
+del bill[k]
+temp = sum(bill) // 2
+if temp != b:
+    print(b-temp)
+else:
+    print("Bon Appetit")
+
+
+
+
+
+
+
+
+
