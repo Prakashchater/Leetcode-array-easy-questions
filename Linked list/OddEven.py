@@ -1,6 +1,11 @@
+class Node:
+    def __init__(self, data):
+        self.data = data
+        self.next = None
+
 def oddEvenList(self, head):
-    odds = ListNode(0)
-    evens = ListNode(0)
+    odds = Node(0)
+    evens = Node(0)
     oddsHead = odds
     evensHead = evens
     isOdd = True
