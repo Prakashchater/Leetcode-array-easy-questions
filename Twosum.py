@@ -39,6 +39,6 @@ def twoSum(arr, target):
     return []
 
 if __name__ == '__main__':
-    arr = [2,8,10,1]
-    target = 18
+    arr = [1, 1, 1, 1]
+    target = 2
     print(twoSum(arr, target))
