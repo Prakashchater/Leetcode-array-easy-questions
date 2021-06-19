@@ -7,6 +7,7 @@ def getPairsCount(arr, k):
     #         if k == curr_sum:
     #             count += 1
     # return count
+
     m = [0] * 1000
     for i in range(0, len(arr)):
         m[arr[i]] += 1
