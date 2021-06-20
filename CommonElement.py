@@ -34,9 +34,9 @@ def findCommon(A, B, C, n1, n2, n3):
 
 
 # Driver program to check above function
-A = [3,3,3]
-B = [3,3,3]
-C = [3,3,3]
+A = [3, 3, 3]
+B = [3, 3, 3]
+C = [3, 3, 3]
 n1 = len(A)
 n2 = len(B)
 n3 = len(C)
