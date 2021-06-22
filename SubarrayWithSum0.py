@@ -1,8 +1,15 @@
 def subArray(arr):
+    pre = 0
+    s = set()
     for i in range(len(arr)):
-        for j in range(i+1, len(arr)):
-            pass
+        pre += arr[i]
+
+        if pre == 0 or pre in s:
+            return True
+        s.add(pre)
+    return False
+
 
 if __name__ == '__main__':
-    arr = [4, 2, -3, 1, 6]
+    arr = [4, 2, 5, 1, 6]
     print(subArray(arr))
