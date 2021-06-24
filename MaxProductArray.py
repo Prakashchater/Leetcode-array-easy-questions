@@ -1,14 +1,25 @@
+"""
+# Time : O(N^2)     Space: O(1)
 def maxProductArray(arr):
-    maxpro = 1
-    curr = 1
-    for i in range(len(arr)):
-        curr = curr * arr[i]
-        if curr > maxpro:
-            maxpro = curr
-        if curr < 0:
-            curr = 0
-    return maxpro
+    res = arr[0]
+    for i in range(0, len(arr)):
+        mul = arr[i]
+        for j in range(i+1, len(arr)):
+            res = max(res, mul)
+            mul *= arr[j]
+
+        res = max(res, mul)
+    return res
 
 if __name__ == '__main__':
-    arr = [6, -3, -10, 0, 2]
+    # arr = [-3, 2, -4, 6, 0, -8, 5]
+    arr = [1, -2, -3, 0, 7, -8, -2]
+    print(maxProductArray(arr))
+"""
+
+def maxProductArray(arr):
+    pass
+
+if __name__ == '__main__':
+    arr = [-3, 2, -4, 6, 0, -8, 5]
     print(maxProductArray(arr))
