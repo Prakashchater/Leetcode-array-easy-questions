@@ -30,5 +30,5 @@ def maxProductArray(arr):
     return maxoverall
 
 if __name__ == '__main__':
-    arr = [-3, 2, -4, 6, 0, -8, 5]
+    arr = [1, -2, -3, 0, 7, -8, -2]
     print(maxProductArray(arr))
