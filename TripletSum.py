@@ -38,10 +38,7 @@ if __name__ == '__main__':
     print(tripletSum(arr, x))
 """
 
-
-# Python3 program to find a triplet using Hashing
-# returns true if there is triplet with sum equal
-# to 'sum' present in A[]. Also, prints the triplet
+# Time: O(N^2)        Space:O(N)
 def find3Numbers(A, arr_size, sum):
     for i in range(0, arr_size - 1):
         # Find pair in subarray A[i + 1..n-1]
