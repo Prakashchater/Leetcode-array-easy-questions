@@ -1,3 +1,4 @@
+# Time: O(N*logN) + O(M*logM)     Space: O(1)
 def smallestDifference(arr1, arr2):
     arr1.sort()
     arr2.sort()
